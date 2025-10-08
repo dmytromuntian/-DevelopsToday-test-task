@@ -1,5 +1,3 @@
-# -DevelopsToday-test-task
-
 # React Component Library — Test Assessment
 
 ## Setup
@@ -27,11 +25,17 @@ Open Storybook and explore:
 - SidebarMenu: `Navigation / SidebarMenu`
 
 ## Screenshots
-<img width="1918" height="972" alt="image" src="https://github.com/user-attachments/assets/d3202f34-00ed-4fa2-815d-b117d2cec326" />
-- Input (text): `<img width="1918" height="968" alt="image" src="https://github.com/user-attachments/assets/043e234c-b84f-44ca-abf6-0e3223d4df43" />
-<img width="1918" height="967" alt="image" src="https://github.com/user-attachments/assets/298037b5-93b7-4337-beb5-764bdb966ff4" />
-- Input (password toggled): <img width="1896" height="950" alt="image" src="https://github.com/user-attachments/assets/4de5019c-dec1-465a-bfd6-6d05d07d8cf7" />
+(Please replace placeholders with actual screenshots)
+- Input (text): `./screenshots/input-text.png`
+- Input (password toggled): `./screenshots/input-password.png`
+- Toast (success): `./screenshots/toast-success.png`
+- Toast (error): `./screenshots/toast-error.png`
+- SidebarMenu (one-level): `./screenshots/sidebar-one.png`
+- SidebarMenu (nested open): `./screenshots/sidebar-nested.png`
+- Storybook UI: `./screenshots/storybook.png`
 
-<img width="1918" height="970" alt="image" src="https://github.com/user-attachments/assets/b382edd6-fbde-4517-963c-77f8e7f8ffa4" />
-- SidebarMenu: <img width="1918" height="980" alt="image" src="https://github.com/user-attachments/assets/bd2183e8-7b7b-4c43-96ba-03510aafc4b8" />
+## Notes & Bonus
+- Add `@storybook/addon-controls` for live editing in Storybook
+- Animations are CSS-based; can be swapped for Framer Motion for extra polish
+- Example: to show a Toast from anywhere, wrap your app with `<ToastProvider>` and call `const { push } = useToasts()`.
 

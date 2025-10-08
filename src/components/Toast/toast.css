@@ -1,0 +1,34 @@
+.toast-wrapper {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  z-index: 9999;
+}
+
+.toast {
+  min-width:200px;
+  max-width:360px;
+  padding:10px 12px;
+  border-radius:8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  transform: translateY(12px);
+  opacity: 0;
+  transition: all 200ms ease;
+}
+
+.toast-body { flex:1; margin-right:8px; font-size:14px; }
+
+.toast-show { transform: translateY(0); opacity:1; }
+
+.toast-info { background: #f0f6ff; color:#153e75; border:1px solid #dbeafe; }
+.toast-success { background:#eefcf3; color:#0f5132; border:1px solid #d1fae5; }
+.toast-error { background:#fff5f5; color:#601313; border:1px solid #fecaca; }
+.toast-warning { background:#fffbeb; color:#663c00; border:1px solid #fde68a; }
+
+.toast-close { background:transparent; border:none; cursor:pointer; font-size:16px; line-height:1; }
